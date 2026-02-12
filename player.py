@@ -1,4 +1,5 @@
 import pygame
+
 from circleshape import CircleShape
 from constants import *
 from shot import Shot
@@ -31,7 +32,7 @@ class Player(CircleShape):
             self.rotate(-dt)
         if keys[pygame.K_d]:
             self.rotate(dt)
-        if keys[pygame.K_w]:
+        if keys[pygame.K_w] or keys[pygame.K_z]:
             self.move(dt)
         if keys[pygame.K_s]:
             self.move(-dt)
