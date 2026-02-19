@@ -1,7 +1,7 @@
-git clone https://github.com/YOU/REPO.git
-cd REPO
-python -m venv venv
-# Windows: venv\Scripts\activate
-# macOS/Linux: source venv/bin/activate
-pip install -r requirements.txt
-python main.py
+git clone https://github.com/avuign/Asteroids.git
+cd Asteroids
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -U pip
+python -m pip install pygame
+python3 main.py
